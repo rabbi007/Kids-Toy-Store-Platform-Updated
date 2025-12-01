@@ -30,11 +30,11 @@ const HighRatedToys = () => {
   }
 
   return (
-    <div className="container mx-auto p-6 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <div className="container mx-auto p-6 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl">
       <h2 className="text-4xl font-extrabold text-center text-gray-50 mb-8">
         Premium 5-Star Toys
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {highRatedToys.map((toy) => (
           <div
             key={toy.toyId}

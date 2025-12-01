@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router';
 import useDocumentTitle from '../Hook/useDocumentTitle';
 
 
 const Error = () => {
   useDocumentTitle('Error(404) - ToyPark');
+    // auto scroll to top of this page
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="flex items-center justify-center min-h-screen bg-linear-to-r from-purple-400 via-pink-500 to-red-500 text-white text-center">
       <div className="max-w-md p-10 bg-white rounded-lg shadow-lg text-gray-800">

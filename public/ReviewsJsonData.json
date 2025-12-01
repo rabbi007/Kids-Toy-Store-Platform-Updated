@@ -29,6 +29,17 @@
       "date": "2025-10-15",
       "customerPhoto": "/FeedbackUser.png",
       "toyImage": "https://i.ibb.co.com/xSWp0dJ8/Superhero-Action-Figures.jpg"
+    },
+
+    {
+      "reviewId": 4,
+      "customerName": "Tafsir Khandaker",
+      "toyName": "Remote control Racing Car",
+      "rating": 4.8,
+      "reviewText": "This remote control racing car is amazing! It’s fast, durable, and easy to control. My kids have a blast racing it around the yard.",
+      "date": "2025-11-05",
+      "customerPhoto": "/FeedbackUser.png",
+      "toyImage": "https://i.ibb.co.com/HpNf8CRT/Hot-Wheels-Racing-Cars-toy-image.jpg"
     }
   ]
 }

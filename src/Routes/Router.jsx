@@ -15,7 +15,6 @@ import Login from "../Pages/Login";
 import ForgetPassword from "../Pages/forgetPassword";
 import PrivateRoutes from "./PrivateRoutes";
 
-
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -29,7 +28,7 @@ const Router = createBrowserRouter([
 
       {
         path: "/home",
-        element: <Home />
+        element: <Home />,
       },
 
       {
@@ -53,20 +52,12 @@ const Router = createBrowserRouter([
 
       {
         path: "/store",
-        element: (
-          <PrivateRoutes>
-            <AllToys />
-          </PrivateRoutes>
-        ),
+        element: <AllToys />,
       },
 
       {
         path: "/details/:id",
-        element: (
-          <PrivateRoutes>
-            <Details />
-          </PrivateRoutes>
-        ),
+        element: <Details />,
       },
 
       {

@@ -6,7 +6,8 @@ import { ToastContainer } from "react-toastify";
 
 const MainLayouts = () => {
   return (
-    <div className="bg-linear-to-r from-purple-100 to-indigo-100">
+    // <div className="bg-linear-to-r from-purple-100 to-indigo-100">
+    <div className="bg-gray-50">
       <div>
         <NavBar />
       </div>

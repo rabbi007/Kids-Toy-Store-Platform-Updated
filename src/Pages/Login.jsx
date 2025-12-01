@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Contexts/AuthContext/AuthContext";
 import { toast } from "react-toastify";
@@ -7,6 +7,10 @@ import useDocumentTitle from "../Hook/useDocumentTitle";
 
 const Login = () => {
   useDocumentTitle ('Login - ToyPark');
+    // auto scroll to top of this page
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const { signInUser, signInWithGoogle } = useContext(AuthContext);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();

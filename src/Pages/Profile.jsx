@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../Contexts/AuthContext/AuthContext";
 import { updateProfile } from "firebase/auth";
@@ -8,12 +8,16 @@ import useDocumentTitle from "../Hook/useDocumentTitle";
 
 const Profile = () => {
   useDocumentTitle ('Profile - ToyPark');
+    // auto scroll to top of this page
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const { currentUser, signOutUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
   // Declare to edit name and photoURL
   const [name, setName] = useState(currentUser?.displayName || "");
-  const [photoURL, setPhotoURL] = useState(currentUser?.photoURL || "");
+  const [photoURL, setPhotoURL] = useState(currentUser?.photoURL || "/default-avatar.png");
   const [loading, setLoading] = useState(false); // General loading state
   const [signOutLoading, setSignOutLoading] = useState(false); // Sign out specific loading state
 

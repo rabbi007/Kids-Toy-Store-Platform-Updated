@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useDocumentTitle from '../Hook/useDocumentTitle';
 
 const TermsAndConditions = () => {
   useDocumentTitle ('Terms And Conditions - ToyPark');
+    // auto scroll to top of this page
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="bg-linear-to-r from-blue-500 via-purple-600 to-pink-500 text-white p-8 mt-24">
       <div className="max-w-4xl mx-auto text-start">

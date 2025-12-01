@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center bg-linear-to-r from-gray-900 via-purple-800 to-black text-white p-10 flex flex-col md:flex-row justify-between items-center gap-10">
+    <footer className="footer footer-horizontal footer-center bg-linear-to-r from-gray-900 via-purple-800 to-black text-white p-10 flex flex-col md:flex-row justify-between items-center gap-10 ">
       {/* <aside className="text-center">
         <svg
           width="50"

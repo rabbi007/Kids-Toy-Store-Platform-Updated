@@ -7,6 +7,10 @@ import useDocumentTitle from "../Hook/useDocumentTitle";
 
 const ForgetPassword = () => {
   useDocumentTitle('Reset Password - ToyPark');
+    // auto scroll to top of this page
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const [email, setEmail] = useState("");
 
   // Initialize Firebase Authentication

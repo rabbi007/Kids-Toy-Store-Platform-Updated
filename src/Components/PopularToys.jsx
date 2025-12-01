@@ -11,7 +11,7 @@ const PopularToys = () => {
       fetch('/ToysJsonData.json')
         .then((response) => response.json())
         .then((data) => {
-          setToysData(data.slice(0, 6));  // Display the first 6 toys
+          setToysData(data.slice(0, 8));  // Display the first 8 toys
           setLoading(false);  
         })
         .catch((error) => {
@@ -31,9 +31,9 @@ const PopularToys = () => {
   }
 
   return (
-    <div className="popular-toys-container p-8 bg-linear-to-r from-purple-100 to-indigo-100">
-      <h2 className="text-center text-4xl font-bold mb-10 text-purple-700">Popular Toys</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="popular-toys-container p-2">
+      <h2 className="text-center text-4xl font-bold mb-6 text-purple-700">Popular Toys</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {toysData.map((toy) => (
           <div key={toy.toyId} className="card bg-white shadow-xl rounded-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
             <img

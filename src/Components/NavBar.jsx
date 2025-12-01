@@ -33,7 +33,12 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
                   </svg>
                 </button>
 
@@ -47,12 +52,24 @@ const Navbar = () => {
                     </Link>
                   </li>
 
+                  {/* Conditionally render Register link */}
+                  {!currentUser && (
                     <li>
                       <Link to="/register" className="text-teal-500 hover:text-teal-600">
                         Register
                       </Link>
                     </li>
-                  
+                  )}
+
+                  {/* Conditionally render Login link */}
+                  {!currentUser && (
+                    <li>
+                      <Link to="/login" className="text-teal-500 hover:text-teal-600">
+                        Login
+                      </Link>
+                    </li>
+                  )}
+
                   <li>
                     <Link to="/profile" className="text-teal-500 hover:text-teal-600">
                       Profile
@@ -64,17 +81,15 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  {currentUser ? (
+                  {/* Conditionally render Logout button */}
+                  {currentUser && (
                     <li>
-                      <button onClick={handleLogout} className="text-red-500 hover:text-red-700">
+                      <button
+                        onClick={handleLogout}
+                        className="text-red-500 hover:text-red-700"
+                      >
                         Logout
                       </button>
-                    </li>
-                  ) : (
-                    <li>
-                      <Link to="/login" className="text-teal-500 hover:text-teal-600">
-                        Login
-                      </Link>
                     </li>
                   )}
                 </ul>
@@ -106,25 +121,41 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                  <Link to="/register" className="hover:text-teal-200 transition-all duration-300">
-                    Register
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/login" className="hover:text-teal-200 transition-all duration-300">
-                    Login
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/profile" className="hover:text-teal-200 transition-all duration-300">
-                    Profile
-                  </Link>
-                </li>
-                <li>
                   <Link to="/store" className="hover:text-teal-200 transition-all duration-300">
                     Toys-Store
+                  </Link>
+                </li>
+
+                {/* Conditionally render Register link */}
+                {!currentUser && (
+                  <li>
+                    <Link to="/register" className="hover:text-teal-200 transition-all duration-300">
+                      Register
+                    </Link>
+                  </li>
+                )}
+
+                {/* Conditionally render Login link */}
+                {!currentUser && (
+                  <li>
+                    <Link to="/login" className="hover:text-teal-200 transition-all duration-300">
+                      Login
+                    </Link>
+                  </li>
+                )}
+
+                {/* Conditionally render Profile link */}
+                {currentUser && (
+                  <li>
+                    <Link to="/profile" className="hover:text-teal-200 transition-all duration-300">
+                      Profile
+                    </Link>
+                  </li>
+                )}
+
+                <li>
+                  <Link to="/about-us" className="hover:text-teal-200 transition-all duration-300">
+                    About us
                   </Link>
                 </li>
               </ul>
@@ -141,7 +172,9 @@ const Navbar = () => {
                       className="w-10 h-10 sm:w-12 sm:h-12 md:w-20 md:h-20 rounded-xl border-2 border-white shadow"
                     />
                     <div className="absolute inset-0 flex items-center justify-center rounded-xl text-white opacity-0 hover:opacity-100 transition-opacity bg-linear-to-r from-blue-500/70 via-purple-500/70 to-pink-500/70 px-2 text-sm text-center">
-                      <span className="max-w-40">{currentUser.displayName}</span>
+                      <span className="max-w-40">
+                        {currentUser.displayName}
+                      </span>
                     </div>
                   </div>
                 ) : (

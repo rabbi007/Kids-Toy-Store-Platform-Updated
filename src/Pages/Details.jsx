@@ -6,6 +6,11 @@ import useDocumentTitle from "../Hook/useDocumentTitle";
 
 const ToyDetails = () => {
   useDocumentTitle("Toys Details - ToyPark");
+    // auto scroll to top of this page
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   const { id } = useParams();
   const [toy, setToy] = useState(null);
 

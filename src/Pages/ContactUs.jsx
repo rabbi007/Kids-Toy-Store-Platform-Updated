@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify'; // Import toastify
 import useDocumentTitle from '../Hook/useDocumentTitle';
 
 const ContactUs = () => {
   useDocumentTitle('Contact Us - ToyPark');
+    // auto scroll to top of this page
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [successMessage, setSuccessMessage] = useState('');
 

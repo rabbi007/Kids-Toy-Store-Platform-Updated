@@ -28,15 +28,15 @@ const Reviews = () => {
   }
 
   return (
-    <div className="container mx-auto p-6 bg-linear-to-r from-purple-100 to-indigo-100">
+    <div className="container mx-auto p-6 bg-linear-to-r from-purple-100 to-indigo-100 rounded-xl">
       <h2 className="text-4xl font-extrabold text-center text-[#FF6347] mb-8">
         Customer Reviews
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {reviews.map((review) => (
           <div
             key={review.reviewId}
-            className="bg-linear-to-r from-purple-500 via-pink-500 to-red-500 shadow-xl rounded-xl p-6 hover:shadow-2xl transition-shadow duration-300"
+            className="bg-linear-to-r from-purple-500 via-pink-500 to-red-500 shadow-xl rounded-xl p-6 transition-transform transform hover:scale-105 hover:shadow-lg"
           >
             <div className="flex items-center mb-4">
               <img

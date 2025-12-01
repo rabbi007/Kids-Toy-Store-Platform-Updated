@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { updateProfile, signOut } from "firebase/auth";
 import { auth } from "../Firebase/Firebase";
 import { IoEye, IoEyeOff } from "react-icons/io5";
@@ -10,6 +10,10 @@ import useDocumentTitle from "../Hook/useDocumentTitle";
 
 const Register = () => {
   useDocumentTitle("Register - ToyPark");
+    // auto scroll to top of this page
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();

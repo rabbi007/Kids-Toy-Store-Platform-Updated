@@ -11,7 +11,7 @@ import "swiper/css/autoplay";
 
 const Hero = () => {
   return (
-    <div className="text-center p-5  mt-24 bg-linear-to-r from-purple-100 to-indigo-100"> 
+    <div className="text-center p-5 mt-20"> 
       <Swiper
         style={{ background: "blue" }}
         loop={true}

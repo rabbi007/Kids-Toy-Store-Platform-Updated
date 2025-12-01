@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useDocumentTitle from '../Hook/useDocumentTitle';
 
 const PrivacyPolicy = () => {
   useDocumentTitle ('Privacy Policy - ToyPark');
+    // auto scroll to top of this page
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="bg-linear-to-r from-teal-400 via-green-500 to-yellow-600 text-white p-8 mt-24">
       <div className="max-w-4xl mx-auto text-start">
