@@ -1,5 +1,5 @@
 	
-# "ToyPark - A Local Kids Toy Store"
+# "ToyPark - Kids Toy Store"
 
 ## Project Overview:
 
@@ -9,15 +9,14 @@
 
 The purpose of **ToyPark** is to create a fun, engaging, and secure environment for families to explore a wide range of toys. It supports local toy sellers and offers a platform for users to interact with the products through ratings, reviews, and personal toy trial requests.
 
-## Live URL: https://toytopia-rabbi.netlify.app/
+## Live URL: https://toy-park.netlify.app/
 
-## Github Repo link: https://github.com/programming-hero-web-course2/b12-a9-firesheild-rabbi007.git
+## Github Repo link: https://github.com/rabbi007/Kids-Toy-Store-Platform-Updated.git
 
 ## Key Features:
 
 - **Authentication**: Users can log in using email/password or Google authentication.
 - **Toys Browse & Search**: View toys by categories with ratings, prices, and descriptions.
-- **Protected Routes**: Certain pages (like User Profile, Toys-Store, Toy-Details) are protected for logged-in users only.
 - **Customer Feedback**: Leave ratings and reviews for toys.
 - **Try Now Feature**: Request a toy for a trial by submitting a simple form.
 - **Responsive Design**: Fully responsive and optimized for mobile, tablet, and desktop.
