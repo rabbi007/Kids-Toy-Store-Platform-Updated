@@ -17,7 +17,7 @@ const Profile = () => {
 
   // Declare to edit name and photoURL
   const [name, setName] = useState(currentUser?.displayName || "");
-  const [photoURL, setPhotoURL] = useState(currentUser?.photoURL || "/default-avatar.png");
+  const [photoURL, setPhotoURL] = useState(currentUser?.photoURL || "");
   const [loading, setLoading] = useState(false); // General loading state
   const [signOutLoading, setSignOutLoading] = useState(false); // Sign out specific loading state
 
@@ -75,14 +75,14 @@ const Profile = () => {
               "https://cdn-icons-png.flaticon.com/512/149/149071.png"
             }
             alt="Profile"
-            className="w-28 h-28 mx-auto rounded-full border-4 border-purple-400 shadow-lg transform transition-transform duration-300 animate-pulse"
+            className="w-28 h-28 mx-auto rounded-full border-4 border-purple-400 shadow-lg"
           />
 
           {/* User Name */}
           <h2 className="text-2xl font-bold mt-4 text-purple-700">
             Name:{" "}
             <span className="text-red-700">
-              {currentUser.displayName || "No User Logged-in"}
+              {currentUser.displayName || "No User"}
             </span>
           </h2>
 
