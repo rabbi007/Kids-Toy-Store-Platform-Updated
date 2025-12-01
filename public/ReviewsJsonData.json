@@ -1,0 +1,34 @@
+{
+  "reviews": [
+    {
+      "reviewId": 1,
+      "customerName": "Rounak Jahan",
+      "toyName": "Lego Classic Bricks",
+      "rating": 5,
+      "reviewText": "My kids absolutely love this Lego set! It's perfect for creativity and hours of fun. Highly recommend it!",
+      "date": "2025-10-21",
+      "customerPhoto": "/FeedbackUser.png",
+      "toyImage": "https://i.ibb.co.com/3YLmXJTC/Lego-Classic-Bricks.jpg"
+    },
+    {
+      "reviewId": 2,
+      "customerName": "Troyee Reza",
+      "toyName": "Remote-Controlled Helicopter",
+      "rating": 4.7,
+      "reviewText": "Great fun for the kids! It’s easy to use and flies really well. The only downside is the battery life, but otherwise, it’s a great product.",
+      "date": "2025-10-18",
+      "customerPhoto": "/FeedbackUser.png",
+      "toyImage": "https://i.ibb.co.com/XxttZxrW/Remote-Controlled-Helicopter.jpg"
+    },
+    {
+      "reviewId": 3,
+      "customerName": "Tuba Khandaker",
+      "toyName": "Superhero Action Figures",
+      "rating": 4.9,
+      "reviewText": "My son loves these action figures! They’re sturdy and well made. The attention to detail is amazing, and he plays with them every day.",
+      "date": "2025-10-15",
+      "customerPhoto": "/FeedbackUser.png",
+      "toyImage": "https://i.ibb.co.com/xSWp0dJ8/Superhero-Action-Figures.jpg"
+    }
+  ]
+}
